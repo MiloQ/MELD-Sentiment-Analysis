@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" autoUpload="Always" serverName="user@202.38.86.69:22 (5)" remoteFilesAllowedToDisappearOnAutoupload="false" confirmBeforeUploading="false" showNewOnSourceInSync="false" showNewOnTargetInSync="false">
+    <option name="confirmBeforeUploading" value="false" />
+    <serverData>
+      <paths name="qzy@192.168.0.88:22">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/data/qzy/meld-sentiment-analysis" local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="user@202.38.86.69:22 (4)">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/tmp/pycharm_project_593" local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="user@202.38.86.69:22 (5)">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/home/user/qzy/meld-sentiment-analysis" local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+    <option name="myAutoUpload" value="ALWAYS" />
+  </component>
+</project>
