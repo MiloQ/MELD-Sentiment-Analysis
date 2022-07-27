@@ -48,3 +48,28 @@ huggingface社区中模型选择丰富，无论是NLP模型还是语音模型。
 
 先运行download文件，将预训练模型和相关的配置 下载下来
 然后运行main文件即可
+
+
+## 关于运行时候的目录问题
+<img src="readmeImg/img.png">  <br>
+这个为项目的一级目录结构,然后我们进入data里面看一下data的目录结构 <br>
+<img src="readmeImg/img_1.png"> <br>
+这个是我服务器上最后的data目录，下面我来讲讲这里面文件夹都是干啥的。
+
+1. emorynlp 这个是里面有三个csv文件存的文本信息，用于文本模态的数据
+2. MELD 存放音视频模态的数据，等会再讲
+3. MELD_Dyadic 我这个项目里没用
+4. mp4towav.py  因为MELD数据集只有视频，我写的这个文件产生下面的三个prepareAudio.sh 然后运行.sh ，把视频中音频提取出来保存成mp3
+，读者也可尝试更改此文件 使其能省略生成.sh这一中间步骤直接生成音频，我自己尝试一直有bug，好奇怪，只能出此下策。
+5. pickles 没啥用
+6. saved_data 这个是我在utils文件夹底下data里面的一个函数，把pytorch里面的Dataset直接存下来（把音频构建成dataset的格式有很多的预处理，相当于直接保存的预处理结果），这样以后重复运行的时候就可以省很多时间了。
+<br>
+
+然后我们进入MELD文件夹 <br>
+<img src="readmeImg/img_2.png"> <br>
+其他都没啥用，就看三个蓝色文件夹，文件夹下面是存的视频，
+比如train_splits，里面有几十个视频，和一个wav文件夹，wav文件夹里面是这几十个视频对应的音频。
+读者可以自己调整文件的存储路径，只要把代码里的路径给对应上即可。
+
+
+
